@@ -15,6 +15,9 @@ export class RecipeService{
       getRecipes(){
         return this.recipes.slice();
       }
+      getRecie(index:number){
+        return this.recipes[index];
+      }
       addIngredientsShoppingList(ingredients:Ingredient[]){
         this.slServer.addIngredients(ingredients);
       }
